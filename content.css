@@ -28,8 +28,8 @@
     display: none !important;
 }
 
-.ok-page-details {
-    width: 100% !important;
+.ok-page-details .entry-content {
+    max-width: 100% !important;
 }
 
 /* Hide ad iframes */
