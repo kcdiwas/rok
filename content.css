@@ -1,0 +1,75 @@
+/* Rok Ad Blocker - Content Styles */
+
+/* Hide common ad containers */
+.advertisement,
+.ad-banner,
+.google-ads,
+.adsense,
+[id*="ad"],
+[class*="ad-"],
+[class*="ads-"],
+.sidebar-ads,
+.header-ads,
+.footer-ads {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0px !important;
+    width: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* OnlineKhabar specific ad selectors */
+.ok-ad-container,
+.ok-advertisement,
+#google_ads_iframe,
+.google-ad-unit {
+    display: none !important;
+}
+
+.ok-page-details {
+    width: 100% !important;
+}
+
+/* Hide ad iframes */
+iframe[src*="doubleclick"],
+iframe[src*="googleads"],
+iframe[src*="googlesyndication"],
+iframe[src*="facebook.com/tr"] {
+    display: none !important;
+}
+
+/* Hide tracking pixels */
+img[src*="facebook.com/tr"],
+img[src*="google-analytics.com"],
+img[width="1"][height="1"] {
+    display: none !important;
+}
+
+/* Hide elements marked as blocked by Rok */
+[data-rok-blocked="true"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0px !important;
+    width: 0px !important;
+}
+
+/* Smooth transitions for better UX */
+* {
+    transition: opacity 0.3s ease !important;
+}
+
+/* Clean up layout after ad removal */
+.main-content,
+.content-wrapper,
+.article-content {
+    max-width: 100% !important;
+}
+
+/* Remove ad placeholders */
+.ad-placeholder,
+.advertisement-placeholder {
+    display: none !important;
+}
